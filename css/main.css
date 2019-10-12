@@ -351,6 +351,12 @@ a:focus {
 	display: inline-block;
 	right: 0;
 }
+#Nav > .drop_blue {
+	width: 13px;
+    position: absolute;
+    top: 3px;
+    left: 16px;
+}
 #Header #Nav li {
 	float: left;
 	list-style: none;
@@ -459,6 +465,9 @@ a:focus {
 .nav_item {
 	padding-right: 10px;
 	color: #4bafe8;
+}
+.nav_item:hover {
+	color: #338bca;
 }
 
 

@@ -19,7 +19,11 @@ a:focus {
 
 #container {
 	max-width: 800px;
+	min-width: 320px;
 	margin: 0 auto;
+}
+#logoImg {
+	width: 122px;
 }
 
 /* ------- index --------  */
@@ -45,7 +49,7 @@ a:focus {
 }
 .index_row > .boy_div {
 	position: relative;
-    right: 9%;
+    right: 10%;
     top: 26px;
 }
 
@@ -68,14 +72,20 @@ a:focus {
 #slider > .text_div {
 	margin-bottom: 60px;
 }
+.web_swiper {
+	display: block;
+}
+.mobile_swiper {
+	display: none;
+}
 .slide_img {
 	margin-bottom: 80px;
 }
 .swiper-container {
 	--swiper-navigation-color: #fff;
 }
-.swiper-scrollbar {
-	display: none;
+.swiper-button-next,.swiper-button-prev{
+	top: 35%;
 }
 .drop_empty {
 	background:url(../image/2/drop_empty.png) no-repeat top left;
@@ -192,12 +202,12 @@ a:focus {
 }
 .button_div > button {
 	width: 195px;
-    height: 79px;
+    height: 58px;
     border: 0;
     border-radius: 45px;
     background: #2c80c3;
     color: #fff;
-    font-size: 22.5px;
+    font-size: 18px;
     letter-spacing: 2.25px;
 }
 .caslte_div{
@@ -284,7 +294,9 @@ a:focus {
     color: #fff;
     font-size: 12px;
     line-height: 26px;
-    letter-spacing: 0.9px;
+	letter-spacing: 0.9px;
+	max-width: 60px;
+    min-width: 55px;
 }
 .gift_tip > .gift_tip_text {
 	flex-basis: 80%;
@@ -298,6 +310,9 @@ a:focus {
 	flex-basis: 40%;
 	min-width: 355px;
     text-align: center;
+}
+.mobile_img {
+	display: none;
 }
 
 /* ---------- notice -----------  */
@@ -330,6 +345,9 @@ a:focus {
 	text-align: center;
     font-weight: bold;
 }
+.notice_text {
+	line-height: 22px;
+}
 
 /* ----------- Header ------------ */
 #Header {
@@ -354,7 +372,7 @@ a:focus {
 #Nav > .drop_blue {
 	width: 13px;
     position: absolute;
-    top: 3px;
+    top: 8px;
     left: 16px;
 }
 #Header #Nav li {
@@ -364,6 +382,10 @@ a:focus {
 #Header #Nav li+li {
 	margin-left: 50px;
 }
+#Header #Nav li:last-child {
+	background: #4bafe8;
+    border-radius: 22px;
+}
 #Header #Nav li>a {
 	color: #4bafe8;
 	-o-transition:color .4s ease-out;
@@ -371,9 +393,19 @@ a:focus {
 	-moz-transition:color .4s ease-out;
 	-webkit-transition:color .4s ease-out;
 	transition:color .4s ease-out;
+	vertical-align: sub;
+}
+#Header #Nav li:last-child>a {
+	color: #fff;
+    padding: 15px;
+    line-height: 35px;
+    border-radius: 35px;
 }
 #Header #Nav li>a:hover {
 	color: #338bca;
+}
+#Header #Nav li:last-child>a {
+	color: #fff;
 }
 #Header.headerBgWhite #Nav li>a {
 	color: #000000;
@@ -453,12 +485,13 @@ a:focus {
     margin-left: 58px;
     line-height: 58px;
 	position: relative;
-	transition: opacity 1s cubic-bezier(0.15, 0.16, 0.74, -1.29);
+	transition: opacity .5s cubic-bezier(0.15, 0.16, 0.74, -1.29);
 }
 .nav_item_show {
 	opacity: 1;
 }
 .nav_item_hide {
+	display: none;
 	opacity: -1;
 	transition: none;
 }
@@ -472,8 +505,128 @@ a:focus {
 
 
 @media (max-width: 767px) {
+	img {
+		width: 92%;
+	}
+
+	.menu_bar {
+		margin-left: 0px;
+	}
+	.menu_bar_open {
+		width: 64%;
+		font-size: 12px;
+		min-width: 320px;
+	}
 	/* Header */
 	#Header {
+		height: 40px;
+	}
+	#Header #Nav {
 		display: none;
+	}
+	#logoImg {
+		width: 18%;
+		min-width: 87px;
+	}
+
+	.index_row {
+		padding-top: 23%;
+	}
+	.index_row > .mother_div {
+		display: none;
+	}
+	.index_row > .text_div {
+		margin-left: 6%;
+	}
+	.index_row > .text_div > img {
+		width: 100%;
+   		margin-left: 17%;
+	}
+	.index_row > .boy_div {
+		right: 0;
+	}
+	.index_row > .boy_div > img {
+		width: 100%;
+	}
+
+	#slider {
+		top: -240px;
+		padding-top: 34%;
+	}
+	
+	#info {
+		top: -550px;
+		padding-top: 70%;
+		padding-bottom: 24%;
+	}
+	#info > .content {
+	    flex-direction: column;
+	}
+	#info > .content > .left_div {
+		flex-basis: initial;
+    	padding-left: 0px;
+	}
+	#info > .content > .left_div > img {
+		width: 65%;
+		max-width: 400px
+	}
+	.advantage_div {
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.advantage_div > .advantage_icon {
+		margin-bottom: 30px;
+	}
+	.advantage_div > .advantage_icon > img {
+		width: 76px;
+	}
+	.caslte_div{
+		position: relative;
+	}
+
+	#triple {
+		top: -590px;
+		height: 1400px;
+	}
+	.gift_row > .right {
+		display: none;
+	}
+	.gift_row > .left {
+		flex-basis: 100%;
+	}
+	.gift_title_span > .title_text {
+		font-size: 22px;
+	}
+	.mobile_img {
+		display: block;
+		text-align: center;
+	}
+	.mobile_img > img {
+		max-width: 400px;
+	}
+
+	.notice_div {
+		padding: 38px 18px;
+	}
+}
+
+@media (max-width: 420px) {
+	#slider {
+		top: -360px;
+	}
+	.web_swiper {
+		display: none;
+	}
+	.mobile_swiper {
+		display: block;
+	}
+
+	#info {
+		top: -641px;
+		padding-bottom: 35%;
+	}
+	#triple {
+		top: -690px;
+		height: 1200px;
 	}
 }

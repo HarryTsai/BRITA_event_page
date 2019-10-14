@@ -80,7 +80,7 @@
         <article id="slider">
             <div class="text_div"><img src="image/2/slider_title@2x.png" width="568px" alt="" /></div>
             <div class="web_swiper swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper animated">
                     <div class="swiper-slide">
                         <img src="image/2/slide_1_n.png" class="slide_img" alt="" />
                     </div>
@@ -99,7 +99,7 @@
                 <div class="swiper-button-next"></div>
             </div>
             <div class="mobile_swiper swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper animated">
                     <div class="swiper-slide">
                         <img src="image/2/m_slide_1_n.png" class="slide_img" alt="" />
                     </div>
@@ -328,6 +328,11 @@
             } else {
                 $("#menu").fadeIn();
             }
+             $('#slider').each(function () {
+                if (isScrolledIntoView(this) === true) {
+                    $('.swiper-wrapper').addClass('fadeIn');
+                }
+            });
             $('#info').each(function () {
                 if (isScrolledIntoView(this) === true) {
                     $('.left_div').addClass('fadeInLeft');

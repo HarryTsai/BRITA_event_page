@@ -618,6 +618,9 @@ a:focus {
 		margin-bottom: 30px;
 		flex-basis: 50%;
 	}
+	.advantage_div > .advantage_icon > img {
+		width: 114px;
+	}
 	.caslte_div{
 		position: relative;
 	}

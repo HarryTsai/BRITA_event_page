@@ -28,7 +28,7 @@ a:focus {
 
 /* ------- index --------  */
 #index {
-    background: url("../image/1/index_bg@2x.png");
+    background: url("../images/index_bg@2x.png");
 	background-repeat: no-repeat;
 	background-position: top center;
 	-webkit-background-size: cover;
@@ -68,7 +68,7 @@ a:focus {
 
 /* ------- slider --------  */
 #slider {
-    background: url("../image/2/slider_bg@2x.png");
+    background: url("../images/slider_bg@2x.png");
 	background-repeat: no-repeat;
 	background-position: top center;
 	-webkit-background-size: cover;
@@ -97,7 +97,6 @@ a:focus {
   	animation-delay: 0.3s;
 }
 .slide_img {
-	margin-bottom: 80px;
 	width: 85%
 }
 .swiper-container {
@@ -107,7 +106,7 @@ a:focus {
 	top: 35%;
 }
 .drop_empty {
-	background:url(../image/2/drop_empty.png) no-repeat top left;
+	background:url(../images/drop_empty.png) no-repeat top left;
 	width: 14px;
     height: 21px;
     display: inline-block;
@@ -117,7 +116,7 @@ a:focus {
 	margin: 0 11px;
 }
 .drop {
-	background:url(../image/2/drop.png) no-repeat top left;
+	background:url(../images/drop.png) no-repeat top left;
 	width: 14px;
     height: 21px;
     display: inline-block;
@@ -126,7 +125,7 @@ a:focus {
 
 /* ------- info --------  */
 #info {
-    background: url("../image/3/info_bg@2x.png");
+    background: url("../images/info_bg@2x.png");
 	background-repeat: no-repeat;
 	background-position: top center;
 	-webkit-background-size: cover;
@@ -228,7 +227,7 @@ a:focus {
 	margin-bottom: 70px;
 	text-align: center;
 }
-.button_div > button {
+.button_div  button {
 	width: 195px;
     height: 58px;
     border: 0;
@@ -236,7 +235,9 @@ a:focus {
     background: #2c80c3;
     color: #fff;
     font-size: 18px;
-    letter-spacing: 2.25px;
+	letter-spacing: 2.25px;
+	margin: 0 8px;
+	cursor: pointer;
 }
 .caslte_div{
 	position: absolute;
@@ -248,7 +249,7 @@ a:focus {
 
 /* ---------- triple -----------  */
 #triple {
-    background: url("../image/4/snowflake.png");;
+    background: url("../images/snowflake.png");;
 	background-repeat: no-repeat;
 	background-position: top center;
 	height: 860px;
@@ -358,6 +359,12 @@ a:focus {
 .mobile_img {
 	display: none;
 }
+.event_right {
+	font-size: 12px;
+    color: #58595B;
+	padding: 0 27px;
+	margin-top: 24px;
+}
 
 /* ---------- notice -----------  */
 #notice {
@@ -406,68 +413,6 @@ a:focus {
 #Header #HeadeInner {
 	margin: 0px auto;
 	position: relative;
-}
-#Header #Nav {
-	position: absolute;
-	top: 13px;
-	display: inline-block;
-	right: 0;
-}
-#Nav > .drop_blue {
-	width: 13px;
-    position: absolute;
-    top: 8px;
-    left: 16px;
-}
-#Header #Nav li {
-	float: left;
-	list-style: none;
-}
-#Header #Nav li+li {
-	margin-left: 50px;
-}
-#Header #Nav li:last-child {
-	background: #4bafe8;
-    border-radius: 22px;
-}
-#Header #Nav li > a {
-	color: #4bafe8;
-	-o-transition:color .4s ease-out;
-	-ms-transition:color .4s ease-out;
-	-moz-transition:color .4s ease-out;
-	-webkit-transition:color .4s ease-out;
-	transition:color .4s ease-out;
-	vertical-align: sub;
-}
-#Header #Nav li > a:hover {
-	color: #338bca;
-}
-#Header #Nav li > a > div {
-	display: inline-block;
-	opacity: 0;
-}
-#Header #Nav li > a:hover > div {
-	opacity: 1;
-}
-#Header #Nav li > a > div > img {
-	width: 13px;
-    position: relative;
-    left: -8px;
-}
-#Header #Nav li:last-child>a {
-	color: #fff;
-    padding: 15px;
-    line-height: 35px;
-    border-radius: 35px;
-}
-#Header #Nav li:last-child>a {
-	color: #fff;
-}
-#Header.headerBgWhite #Nav li>a {
-	color: #000000;
-}
-#Header.headerBgWhite #Nav li>a:hover {
-	color: #4299e4;
 }
 
 /* ----------- Menu ------------ */
@@ -578,9 +523,6 @@ a:focus {
 	#Header {
 		height: 40px;
 	}
-	#Header #Nav {
-		display: none;
-	}
 	#logoImg {
 		width: 18%;
 		min-width: 87px;
@@ -610,10 +552,10 @@ a:focus {
 		top: -240px;
 		padding-top: 34%;
 	}
-	
+
 	#info {
 		top: -550px;
-		padding-top: 70%;
+		padding-top: 60%;
 		padding-bottom: 24%;
 	}
 	#info > .content {
@@ -644,7 +586,7 @@ a:focus {
 
 	#triple {
 		top: -590px;
-		height: 1400px;
+		height: 1460px;
 	}
 	.gift_row > .right {
 		display: none;
@@ -686,9 +628,13 @@ a:focus {
 		top: -641px;
 		padding-bottom: 35%;
 	}
+	.button_div  button {
+		margin: 0 8px 5px;
+	}
+
 	#triple {
 		top: -690px;
-		height: 1200px;
+		height: 1345px;
 	}
 	.market_ul {
 		justify-content: space-around;

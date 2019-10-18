@@ -9,41 +9,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="icon" type="image/png" href="image/1/logo.png" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
     <title>BRITA</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta charset="UTF-8">
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="用BRITA濾水，你家也能產好水！" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="images/ogImg.jpg" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="做料理、榨果汁、煮咖啡、給寵物喝好水...提升生活品質，從好水質開始！" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35969521-52"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-35969521-52');
+    </script>
+    <script>
+        var js = document.createElement('script'); js.async = true;
+        js.src = 'https://onetag.onead.com.tw/tag_code/858831529.js';
+        document.head.appendChild(js);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Ads: 703017695 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-703017695"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-703017695');
+    </script>
+    <!-- Event snippet for Brita JUG濾水壺_轉換按鈕 conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-703017695/mN0aCN2MqK4BEN_lnM8C',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <section id="container">
-        <div id="menu" class="menu_bar menu_bar_closed">
-            <div class="nav_bar nav-icon">
+        <div id="menu" class="menu_bar menu_bar_open">
+            <div class="nav_bar nav-icon-close">
                 <div></div>
             </div>
-            <div class="nav_item_div nav_item_hide">
-                <a href="#slider">
+            <div class="nav_item_div nav_item_show">
+                <a href="#slider" onClick="ga('send', 'event', 'Link', 'Click', 'menu_好水贊助')">
                     <div class="nav_item">好水贊助</div>
                 </a>
-                <a href="#info">
+                <a href="#info" onClick="ga('send', 'event', 'Link', 'Click', 'menu_了解產品')">
                     <div class="nav_item">了解產品</div>
                 </a>
-                <a href="#triple">
+                <a href="#triple" onClick="ga('send', 'event', 'Link', 'Click', 'menu_好水三重送')">
                     <div class="nav_item">好水三重送</div>
                 </a>
-                <a href="">
+                <a href="" onClick="ga('send', 'event', 'Link', 'Click', 'menu_立即購買')">
                     <div class="nav_item">立即購買</div>
                 </a>
             </div>
@@ -51,61 +93,39 @@
         <header id="Header">
             <div id="HeadeInner">
                 <div class="logo">
-                    <a href="#top" class="top"><img id="logoImg" src="image/1/logo@2x.png" ></a>
+                    <a href="#top" class="top"><img id="logoImg" src="images/logo@2x.png" ></a>
                 </div>
-                <nav id="Nav">
-                    <!-- <img src="image/1/drop_blue@2x.png" class="drop_blue" alt="" /> -->
-                    <ul>
-                        <li>
-                            <a href="#slider">
-                                <div><img src="image/1/drop_blue@2x.png" class="drop_blue" alt="" /></div> 好水贊助
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#info">
-                                <div><img src="image/1/drop_blue@2x.png" class="drop_blue" alt="" /></div> 了解產品
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#triple">
-                                <div><img src="image/1/drop_blue@2x.png" class="drop_blue" alt="" /></div> 好水三重送
-                            </a>
-                        </li>
-                        <li><a href="">立即購買</a></li>
-                    </ul>
-                </nav>
             </div>
         </header>
         <article id="index">
             <div class="index_row">
                 <div class="mother_div animated fadeInUp">
-                    <img src="image/1/mother@2x.png"  alt=""/>
+                    <img src="images/mother@2x.png"  alt=""/>
                 </div>
                 <div class="text_div">
-                    <img src="image/1/index_text@2x.png" alt="" />
+                    <img src="images/index_text@2x.png" alt="" />
                 </div>
                 <div class="boy_div animated fadeInUp">
-                    <img src="image/1/boy@2x.png" alt="" />
+                    <img src="images/boy@2x.png" alt="" />
                 </div>
             </div>
         </article>
         <article id="slider">
-            <div class="text_div"><img src="image/2/slider_title@2x.png" width="568px" alt="" /></div>
+            <div class="text_div"><img src="images/slider_title.png" width="568px" alt="" /></div>
             <div class="web_swiper swiper-container">
                 <div class="swiper-wrapper animated">
                     <div class="swiper-slide">
-                        <img src="image/2/slide_1_n.png" class="slide_img" alt="" />
+                        <img src="images/slide_1.png" class="slide_img" alt="" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="image/2/slide_2_n.png" class="slide_img" alt="" />
+                        <img src="images/slide_2_tbc.png" class="slide_img" alt="" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="image/2/slide_3_n.png" class="slide_img" alt="" />
+                        <img src="images/slide_3_tbc.png" class="slide_img" alt="" />
                     </div>
                 </div>
                 <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
-            
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
@@ -113,28 +133,27 @@
             <div class="mobile_swiper swiper-container">
                 <div class="swiper-wrapper animated">
                     <div class="swiper-slide">
-                        <img src="image/2/m_slide_1_n.png" class="slide_img" alt="" />
+                        <img src="images/m_slide_1.png" class="slide_img" alt="" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="image/2/m_slide_2_n.png" class="slide_img" alt="" />
+                        <img src="images/m_slide_2_tbc.png" class="slide_img" alt="" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="image/2/m_slide_3_n.png" class="slide_img" alt="" />
+                        <img src="images/m_slide_3_tbc.png" class="slide_img" alt="" />
                     </div>
                 </div>
                 <!-- 如果需要分页器 -->
                 <div class="swiper-pagination"></div>
-            
                 <!-- 如果需要导航按钮 -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
         </article>
         <article id="info">
-            <div class="text_div"><img src="image/3/info_title@2x.png" width="384px" alt="" /></div>
+            <div class="text_div"><img src="images/info_title@2x.png" width="384px" alt="" /></div>
             <div class="content">
                 <div class="left_div animated">
-                    <img src="image/3/kettle@2x.png" alt="" />
+                    <img src="images/kettle@2x.png" alt="" />
                 </div>
                 <div class="right_div">
                     <div class="top_div">
@@ -142,19 +161,19 @@
                         <hr class="gradient_line_white" />
                         <div class="advantage_div">
                             <div class="advantage_icon">
-                                <img src="image/3/info_icon1_n.png" width="" alt="" />
+                                <img src="images/info_icon1_n.png" width="" alt="" />
                                 <div class="advantage_text">料理健康升級</div>
                             </div>
                             <div class="advantage_icon">
-                                <img src="image/3/info_icon2_n.png" width="" alt="" />
+                                <img src="images/info_icon2_n.png" width="" alt="" />
                                 <div class="advantage_text">飲品口感加分</div>
                             </div>
                             <div class="advantage_icon">
-                                <img src="image/3/info_icon3_n.png" width="" alt="" />
+                                <img src="images/info_icon3_n.png" width="" alt="" />
                                 <div class="advantage_text">預防水垢堆積</div>
                             </div>
                             <div class="advantage_icon">
-                                <img src="image/3/info_icon4_n.png" width="" alt="" />
+                                <img src="images/info_icon4_n.png" width="" alt="" />
                                 <div class="advantage_text">輕鬆產好水</div>
                             </div>
                         </div>
@@ -167,12 +186,17 @@
                 </div>
             </div>
             <div class="button_div">
-                <button>了解更多</button>
+                <a href="https://thinkyourwater.brita.tw/cn/mypure-pro-x9/" target="_blank" onClick="ga('send', 'event', 'Link', 'Click', 'product_了解產品')">
+                    <button>了解更多</button>
+                </a>
+                <a href="" onClick="ga('send', 'event', 'Link', 'Click', 'product_立即購買')">
+                    <button>立即購買</button>
+                </a>
             </div>
-            <div class="caslte_div"><img src="image/4/caslte.png" class="caslte_img" alt="" /></div>
+            <div class="caslte_div"><img src="images/caslte.png" class="caslte_img" alt="" /></div>
         </article>
         <section id="triple">
-            <div class="text_div"><img src="image/4/triple_title@2x.png" width="380px" alt="" /></div>
+            <div class="text_div"><img src="images/triple_title@2x.png" width="380px" alt="" /></div>
             <div class="triple_content">
                 <div class="gift_row animated">
                     <div class="left">
@@ -196,11 +220,14 @@
                             <div class="gift_tip_text">把照片上傳至「BRITA TW官方粉絲頁」加上 #用BRITA濾水你家也能產好水 並Tag好友2人</div>
                         </div>
                         <div class="mobile_img">
-                            <img src="image/4/gift_1_n.png" alt="" />
+                            <img src="images/gift_1_n.png" alt="" />
+                        </div>
+                        <div class="event_right">
+                            以上活動僅限實體通路，活動內容、贈品以門市現場公告為主。台灣碧然德有限公司保留修改及終止本活動之權利。
                         </div>
                     </div>
                     <div class="right">
-                        <img src="image/4/gift_1_n.png" width="335px" alt="" />
+                        <img src="images/gift_1_n.png" width="335px" alt="" />
                     </div>
                 </div>
                 <div class="gift_row animated">
@@ -217,11 +244,14 @@
                             活動期間全台量販門市購買「BRITA全系列商品」(櫥下型商品除外)滿2000元, 就送限量聖誕樹隨意毯或摺疊後背包。
                         </p>
                         <div class="mobile_img">
-                            <img src="image/4/gift_2_n.png" alt="" />
+                            <img src="images/gift_2_n.png" alt="" />
+                        </div>
+                        <div class="event_right">
+                            以上活動僅限實體通路，活動內容、贈品以門市現場公告為主。台灣碧然德有限公司保留修改及終止本活動之權利。
                         </div>
                     </div>
                     <div class="right">
-                        <img src="image/4/gift_2_n.png" width="330px" alt="" />
+                        <img src="images/gift_2_n.png" width="330px" alt="" />
                     </div>
                 </div>
                 <div class="gift_row animated">
@@ -242,24 +272,26 @@
                             <div class="gift_tip_text">10/16-11/30 (全台通路）</div>
                         </div>
                         <div class="mobile_img">
-                            <img src="image/4/gift_3_n.png" alt="" />
+                            <img src="images/gift_3_n.png" alt="" />
                         </div>
                     </div>
                     <div class="right">
-                        <img src="image/4/gift_3_n.png" width="284px" alt="" />
+                        <img src="images/gift_3_n.png" width="284px" alt="" />
                     </div>
                 </div>
             </div>
             <div class="button_div">
-                <button>立即購買</button>
+                <a href="" onClick="ga('send', 'event', 'Link', 'Click', 'Frozen_立即購買')">
+                    <button>立即購買</button>
+                </a>
             </div>
         </section>
         <article id="notice">
             <ul class="market_ul">
-                <li><img src="image/5/amart_logo.png" class="" alt="" /></li>
-                <li><img src="image/5/carrefour_logo.png" class="" alt="" /></li>
-                <li><img src="image/5/rtmart_logo.png" class="" alt="" /></li>
-                <li><img src="image/5/bq_logo.png" class="" alt="" /></li>
+                <li><img src="images/amart_logo.png" class="" alt="" /></li>
+                <li><img src="images/carrefour_logo.png" class="" alt="" /></li>
+                <li><img src="images/rtmart_logo.png" class="" alt="" /></li>
+                <li><img src="images/bq_logo.png" class="" alt="" /></li>
             </ul>
             <div class="notice_div">
                 <p class="notice_title">注意事項</p>
@@ -277,10 +309,6 @@
     <script type="text/javascript" src="js/swiper.animate1.0.3.min.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-            // direction: 'vertical', // 垂直切换选项
-            // loop: true, // 循环模式选项
-
-            // 如果需要分页器
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
@@ -291,8 +319,6 @@
                     return '<span class="' + className + '"></span>';
                 },
             },
-
-            // 如果需要前进后退按钮
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -301,61 +327,48 @@
 
         })
         $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-                var target = this.hash,
-                    $target = $(target);
-                var margin_top = 0;
-                var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
-                $body.stop().animate({ 'scrollTop': $target.offset().top - margin_top }, 1000, 'swing', function () {
-                    window.location.hash = target;
-                });
-                return false;
+            e.preventDefault();
+            var target = this.hash,
+                $target = $(target);
+            var margin_top = target === '#triple' ? 120 : target === '#info' ? -170 : -100;
+            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+            $body.stop().animate({ 'scrollTop': $target.offset().top - margin_top }, 1000, 'swing', function () {
             });
+            return false;
+        });
 
 
         $(document).ready(function () {
-                var width = $(window).width()
-                if(width > 768) {
-                    $("#menu").hide();
-                }
-                var menu = $('.nav_bar')
-                var menu_bar = $('.menu_bar')
-                var nav_item_div = $('.nav_item_div')
-                menu_bar.click(function () {
-                    menu.toggleClass('nav-icon-close');
-                    menu.toggleClass('nav-icon');
-                    menu_bar.toggleClass('menu_bar_open')
-                    menu_bar.toggleClass('menu_bar_closed')
-                    nav_item_div.toggleClass('nav_item_hide')
-                    nav_item_div.toggleClass('nav_item_show')
-                })
+            var width = $(window).width()
+            var menu = $('.nav_bar')
+            var menu_bar = $('.menu_bar')
+            var nav_item_div = $('.nav_item_div')
+            menu_bar.click(function () {
+                menu.toggleClass('nav-icon-close');
+                menu.toggleClass('nav-icon');
+                menu_bar.toggleClass('menu_bar_open')
+                menu_bar.toggleClass('menu_bar_closed')
+                nav_item_div.toggleClass('nav_item_hide')
+                nav_item_div.toggleClass('nav_item_show')
+            })
 
-            
-        $(window).scroll(function () {
-            // $("#menu").hide();
-            var index = $("#index").offset().top;
-            var scroll = $(this).scrollTop();
-            if (width > 768 && scroll < (index)) {
-                $("#menu").fadeOut();
-            } else {
-                $("#menu").fadeIn();
-            }
-             $('#slider').each(function () {
-                if (isScrolledIntoView(this) === true) {
-                    $('.swiper-wrapper').addClass('fadeIn');
-                }
+            $(window).scroll(function () {
+                 $('#slider').each(function () {
+                    if (isScrolledIntoView(this) === true) {
+                        $('.swiper-wrapper').addClass('fadeIn');
+                    }
+                });
+                $('#info').each(function () {
+                    if (isScrolledIntoView(this) === true) {
+                        $('.left_div').addClass('fadeInLeft');
+                    }
+                });
+                $('#triple').each(function () {
+                    if (isScrolledIntoView(this) === true) {
+                        $('.gift_row').addClass('fadeInUp');
+                    }
+                });
             });
-            $('#info').each(function () {
-                if (isScrolledIntoView(this) === true) {
-                    $('.left_div').addClass('fadeInLeft');
-                }
-            });
-            $('#triple').each(function () {
-                if (isScrolledIntoView(this) === true) {
-                    $('.gift_row').addClass('fadeInUp');
-                }
-            });
-        });
             function isScrolledIntoView(elem) {
                 var docViewTop = $(window).scrollTop();
                 var docViewBottom = docViewTop + $(window).height();
@@ -364,7 +377,7 @@
                 var elemBottom = elemTop + $(elem).height();
                 return ((elemTop - 500) <= docViewTop);
             }
-            });
+        });
     </script>
 </body>
 </html>

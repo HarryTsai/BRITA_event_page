@@ -411,10 +411,6 @@ a:focus {
 	padding: 0 3%;
 	margin: 32px 0 0px;
 }
-.headerBgWhite {
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
-	background-color: rgba(255, 255, 255, 0.7);
-}
 #Header #HeadeInner {
 	margin: 0px auto;
 	position: relative;

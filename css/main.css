@@ -246,7 +246,7 @@ a:focus {
 }
 .caslte_div{
 	position: absolute;
-    bottom: 0px;
+    bottom: -5px;
 }
 .caslte_img {
     width: 100%;
@@ -264,7 +264,7 @@ a:focus {
 #triple > .text_div {
 	text-align: center;
     position: relative;
-    top: -58px;
+    top: -15px;
     margin-bottom: 72px;
 }
 .triple_content > .gift_row {
@@ -635,7 +635,7 @@ a:focus {
 
 	#triple {
 		top: -690px;
-		height: 1345px;
+		height: 1355px;
 	}
 	.market_ul {
 		justify-content: space-around;

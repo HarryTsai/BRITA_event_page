@@ -233,6 +233,7 @@ a:focus {
 	text-align: center;
 }
 .button_div  button {
+	font-family: 'Noto Sans CJK TC', 'Microsoft JhengHei', Arial, sans-serif;
 	width: 195px;
     height: 58px;
     border: 0;
@@ -246,7 +247,7 @@ a:focus {
 }
 .caslte_div{
 	position: absolute;
-    bottom: -5px;
+    bottom: -6px;
 }
 .caslte_img {
     width: 100%;
@@ -360,6 +361,21 @@ a:focus {
 }
 .gift_row > .right > img {
 	max-width: 355px;
+}
+.horizontal_line {
+	width:100%;
+	text-align:center;
+	border-bottom: 2px solid #338bca;
+	line-height:0.1em;
+	position: relative;
+	top: -70px;
+}
+.horizontal_line > span {
+	background:#fff;
+}
+.horizontal_line > span > img {
+	position: relative;
+    top: 16px;
 }
 .mobile_img {
 	display: none;
@@ -607,6 +623,9 @@ a:focus {
 		max-width: 400px;
 	}
 
+	.horizontal_line {
+		top: -120px;
+	}
 	.notice_div {
 		padding: 38px 18px;
 	}
@@ -657,6 +676,10 @@ a:focus {
 	.market_ul > li > img {
 		width: auto;
 		max-width: 150px;
+	}
+
+	.horizontal_line {
+		top: -70px;
 	}
 }
 @media (max-width: 374px) {

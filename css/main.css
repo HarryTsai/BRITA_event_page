@@ -266,7 +266,7 @@ a:focus {
 	text-align: center;
     position: relative;
     top: -15px;
-    margin-bottom: 72px;
+    margin-bottom: 30px;
 }
 .triple_content > .gift_row {
 	display: flex;
@@ -604,7 +604,10 @@ a:focus {
 
 	#triple {
 		top: -590px;
-		height: 1460px;
+		height: 1520px;
+	}
+	#triple > .text_div > img {
+		width: 94%;
 	}
 	.gift_row > .right {
 		display: none;
@@ -662,7 +665,10 @@ a:focus {
 
 	#triple {
 		top: -690px;
-		height: 1355px;
+		height: 1396px;
+	}
+	#triple > .text_div > img {
+		width: 100%;
 	}
 	.market_ul {
 		justify-content: space-around;

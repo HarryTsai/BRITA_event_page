@@ -258,7 +258,7 @@ a:focus {
     background: url("../images/snowflake.png");;
 	background-repeat: no-repeat;
 	background-position: top center;
-	height: 860px;
+	height: 600px;
 	position: relative;
 	top: -440px;
 }
@@ -604,7 +604,7 @@ a:focus {
 
 	#triple {
 		top: -590px;
-		height: 1520px;
+		height: 940px;
 	}
 	#triple > .text_div > img {
 		width: 94%;
@@ -665,7 +665,7 @@ a:focus {
 
 	#triple {
 		top: -690px;
-		height: 1396px;
+		height: 810px;
 	}
 	#triple > .text_div > img {
 		width: 100%;

@@ -428,7 +428,7 @@ a:focus {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 54px;
 }

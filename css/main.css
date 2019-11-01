@@ -43,6 +43,10 @@ a:focus {
 	position: relative;
 }
 .index_row {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
    	padding-top: 147px;
 }
@@ -148,6 +152,10 @@ a:focus {
 	margin-bottom: 60px;
 }
 #info > .content {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
 	margin-bottom: 42px;
 }
@@ -188,6 +196,10 @@ a:focus {
     background-image: -o-linear-gradient(left, #fff, transparent);
 }
 .advantage_div {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
     justify-content: space-between;
 	text-align: center;
@@ -269,6 +281,10 @@ a:focus {
     margin-bottom: 30px;
 }
 .triple_content > .gift_row {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
 	padding: 0px 12px;
 	align-items: center;
@@ -330,6 +346,10 @@ a:focus {
 }
 .gift_tip {
 	padding: 0 26px;
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
 	margin-bottom: 10px;
 }
@@ -400,6 +420,10 @@ a:focus {
     position: relative;
 }
 .market_ul {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
     margin: 0px;
     padding: 0px;
@@ -499,6 +523,10 @@ a:focus {
 	transition: all .2s ease-in-out;
 }
 .nav_item_div {
+	display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;      /* TWEENER - IE 10 */
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-around;
     align-items: center;
